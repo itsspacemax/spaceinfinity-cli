@@ -1,0 +1,37 @@
+{
+  "name": "spaceinfinity-cli",
+  "version": "0.0.1",
+  "description": "A simple CLI to convert normal text to other kinds of encoded text.",
+  "main": "bin/index.js",
+  "scripts": {
+    "build": "npm run eslint && npm run prettier",
+    "eslint": "eslint bin/**/*.js --fix",
+    "prepublish": "npm run build",
+    "prettier": "prettier --write bin/**/*.js",
+    "test": "eslint src && prettier --check bin/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/NotReallyEight/spaceinfinity-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "text-converter"
+  ],
+  "author": "NotReallyEight",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/NotReallyEight/spaceinfinity-cli/issues"
+  },
+  "homepage": "https://github.com/NotReallyEight/spaceinfinity-cli#readme",
+  "bin": {
+    "spaceinfinity": "./bin/index.js"
+  },
+  "contributors": [
+    "NotReallyEight",
+    "Spacemax"
+  ],
+  "dependencies": {
+    "yargs": "^17.2.1"
+  }
+}
